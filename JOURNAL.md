@@ -14,28 +14,30 @@
 
 ## Contents
 
-1. [2026-10-22 – October 21, 22: Designing Schematic and Filling Out BOM](#2026-10-22-october-21-22-designing-schematic-and-filling-out)
+1. [2026-10-22 – # October 21, 22: Designing Schematic and Filling Out BOM](#2026-10-22-october-21-22-designing-schematic-and-filling-out)
 
 ## Design
 
-### 2026-10-22 – October 21, 22: Designing Schematic and Filling Out BOM
+### 2026-10-22 – # October 21, 22: Designing Schematic and Filling Out BOM
 
 **4h**
 
-October 21, 22: Designing Schematic and Filling Out BOM
+# October 21, 22: Designing Schematic and Filling Out BOM
 
-Okay, so I finally started working on my laser harp project. So far everything's looking good, but I still need to scope some things out (I'll get to that later). Yesterday, I finished the first step to the project: making the schematic. Compared to the schematics I made for previous weeks, I think this one went a lot smoother now that I actually know how to design a schematic. The only challenging thing was finding the right footprints for the lasers, Raspberry Pi pico, and phototransistors, which I had to find online.
+Okay, so I finally got started on my Midi Keyboard project. This is the first time I've done one of the starter projects, and so far I have to say things are going well.
 
-![Screenshot 2026-10-22 at 8.22.04 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/5de0d2e06f5cc4a612adf873ae41e3b75d440118d3ce6efeb94d076836247037.png)
+The first thing I worked on was the schematic. I had a bit of trouble importing the symbols and footprints libraries, but once I got them in I followed the tutorial and finished a solid layout with 2 buttons to adjust the octave and 2 sliders to adjust volume and modulation. I'm a bit of a perfectionist, so I took the time to carefully align each of the components and labels so I can have it the way I like. In my first design, I used the XIAO ESP32-S3, but I restarted so I could use the Waveshare ESP32-S3-ZERO so I could get some more pins.I thought I wouldn't be able to add the LEDs due to budget constraints, but it turns out that I actually have some leftover from a keyboard repair I did a couple months ago! I added a few to the schematic to finalize it.
 
-![Screenshot 2026-10-22 at 8.22.17 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/fa69957452fc6641f0d3724e34637ab0ed4974bb4e9b9181c3e1128421f374de.png)
+![Screenshot 2026-10-23 at 7.43.41 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/4a12c05c9cb85127b972c4b69406717147b3d0df669bfee474b86864c88d168c.png)
 
-What ate up most of my time the last couple days was filling out the Bill of Materials. I did some research on what components will be best for my project, leading me to choose phototransistors over photo resistors due to their responsiveness and suitability for a sensitive instrument like my harp. While scoping out the instrument, I initially though I would have to file it as a Tier 2 project. While drafting my first BOM, I had lots of unnecessary and small items that were driving up the price, so I realized that I could probably make this a Tier 1 project instead. It turns out I was right! I found lots of cheap parts on LCSC, but I also found a set of 10 lasers on Amazon. I cut components like the resistors because I already have some that I used for a previous project. Another change I made is that I'm going to use a breadboard that I already have rather than designing a PCB in order to keep costs down. That would mean my harp would have a wider base, which might actually look both nice and be practical, as it's less likely to fall while breaking.
+![Screenshot 2026-10-23 at 7.43.57 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/25b6cb54e5ed3529ee3f20cfb78704ea185b8e6294aaf548d21e41882bc5b40f.png)
 
-![Screenshot 2026-10-22 at 8.22.36 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/fba847ac9e12eedbe0d99b36f9e20bd103d18c71c7595f665ee5788e7115dc7e.png)
+The next thing I did was get started on the Bill of Materials. With taxes and shipping included, I'd definitely be cutting it close to the $30 budget, so I visited multiple sites like AliExpress, LCSC, Amazon, and DigiKey to compare prices and find the cheapest components. I settled to get the ESP32-S3-ZERO and switches from AliExpress, and the sliders from DigiKey. I also need to add the PCB costs to the BOM once I finish, but I think it'll be within the budget.
 
-![Screenshot 2026-10-22 at 8.21.23 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/0a6cbd7783fc71e27de5e26a0e8f887e65d2bc8499b1d35d749ae96dbf2cf612.png)
+![Screenshot 2026-10-23 at 7.44.31 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/d87f8ead3dcfe23b7703333c3e4bbaa8a605b6d376565d5a0cf12a08397232a4.png)
 
-The next step is going to be CAD, which is going to be difficult considering the scale of the project. After that, I have to work on firmware, which is probably going to be the most challenging part of the entire design process.
+![Screenshot 2026-10-23 at 7.45.27 PM](https://halflife.hackclub-assets.com/sessions/oWK9iPLBGiJtrZ5WPQtAnBOy06yuxWnK/f0511ab787f2c2965802aa5ca7e27487009f77477d72df204dfbaca969bdfb4b.png)
 
-# TL;DR: I finished the schematic and BOM for my laser harp project. I found the schematic to be a lot easier with my new KiCad skills. I had to rewrite my first BOM because I realized that I could make my project Tier 1 instead of Tier 2. I also found a lot of components from previous projects that I can use for the harp.
+Next, I'll need to start designing the PCB and routing the board, and after that I need to do the firmware.
+
+# TL;DR: I finished the schematic and most of the BOM for my Midi Keyboard. I took my time with the schematic to get everything the way I want it, but I may need to change some stuff around when I actually design my PCB. For the BOM, I specifically searched for the components with the cheapest prices to fit in the budget.
