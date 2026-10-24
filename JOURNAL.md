@@ -6,11 +6,11 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmvfkz082007a01rplw6y48i4). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> A futuristic take on the harp where laser beams take the place of strings
+> A musical tool with 7 copper pads, 2 switches to adjust the octave, and 2 sliders to adjust volume and modulation.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 3 | Tier 1 | 4h | 1 |
+| Week 3 | Tier 1 | 3h | 1 |
 
 ## Contents
 
@@ -20,7 +20,7 @@
 
 ### 2026-10-22 – # October 21, 22: Designing Schematic and Filling Out BOM
 
-**4h**
+**3h**
 
 # October 21, 22: Designing Schematic and Filling Out BOM
 
