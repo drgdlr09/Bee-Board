@@ -19,6 +19,7 @@ The switches change the octave. Switch 1 is on RX and moves down an octave, and 
 | Waveshare ESP32-S3-Zero | 1 | $5.69 | $5.69 | AliExpress |
 | Kailh Choc V2 Low Profile Switches | 5 | $0.63 | $3.15 | AliExpress |
 | Bourns PTA1543 Slide Potentiometers (10k) | 2 | $1.58 | $3.16 | DigiKey |
+|PCB|1|$9.60|$9.60|JLCPCB|
 
 Tax & shipping: $7.29
 **Total**: **$19.29**
