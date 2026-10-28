@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D2",LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount,2,SK6812MINI-E,
+J1,Touch_Honeycomb_7,1,Capacitive Touch Buttons,
+RV1,Potentiometer_Bourns_PTA1543_Single_Slide,1,Slider 2,
+RV2,Potentiometer_Bourns_PTA1543_Single_Slide,1,Slider 1,
+"SW1, SW2",Kailh Choc Low-Profile Switches,2,SW_Push,
+U1,Waveshare ESP32-S3-Zero,1,Waveshare ESP32-S3-ZERO,
