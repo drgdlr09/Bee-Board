@@ -1,7 +1,12 @@
 # Bee Board - A Brief Overview
+<img width="762" height="451" alt="Screenshot 2026-10-28 at 4 24 36 PM" src="https://github.com/user-attachments/assets/f5abad05-61f8-463c-b2e6-f35c54efc80f" />
+
 For Half Life week 3, I designed Bee Board, a MIDI controller with 7 hexagon-shaped capacitive touch keys, two sliders, two switches, and two RGB LEDs. I wanted to make a MIDI keyboard that had some sort of theme, and after brainstorming, I decided to lay out my touch buttons like a honeycomb with C in the middle, and G, E, A, F, D, and B around it. Another cool thing about the Bee Board is that you can play chords by placing your finger at the intersection of touch buttons. Since it's a honeycomb, I made a simple bee image and put it on the board as well.
 
 # How It Works
+<img width="538" height="523" alt="Screenshot 2026-10-28 at 4 25 05 PM" src="https://github.com/user-attachments/assets/045347c6-f970-4ace-9b8a-a33bf7d1c722" />
+<img width="1099" height="646" alt="Screenshot 2026-10-28 at 4 25 30 PM" src="https://github.com/user-attachments/assets/411feb98-59a7-46f1-a566-3a2f04bc9b3c" />
+
 Bee Board has an esp32-s3-zero microcontroller, 7 capacitive touchpads, two slides, two Kailh Choc switches, and two SK6812MINI-E RGB LEDs under the switches. The MIDI is build around the ESP32-S3-Zero. I wanted to add a good amount of features, so this was the right pick for this project. 
 The touch pads are hexagons about 24mm across, with 1.2mm gaps between them so touching one pad doesn’t trigger the one next to it. They’re covered by solder mask, so the note letters are printed right on top of them. Touch pad 1 (C) is on GP1, and pads 2 through 7 (G, E, A, F, D, B) are on GP2 through GP7. When a pad is touched, the firmware sends a MIDI Note On message, and when it’s released, it sends Note Off. 
 The sliders control how the notes sound. Slider 1 is on GP10 and sets the velocity, which is how loud each note plays. Touch pads can’t tell how hard you press them, so this was the easiest way to change the volume. Slider 2 is on GP11 and sends MIDI CC 1, the modulation wheel, which adds vibrato in most synths.
